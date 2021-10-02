@@ -17,7 +17,8 @@ Sebelum menginstal Git pastikan sudah ada editor text yang terinstal. Git dapat 
  11. Tunggu proses instalasinya selesai. Jika sudah selesai klik **Finish**.
  12. Setelah itu coba jalankan Git Bash atau command prompt dan ketikan **--git version** untuk memeriksa keberhasilan instalasi. Jika berhasil maka akan muncul versi Git yang diinstal.
 
-# Mengelola Repo di account sendiri
+# Mengelola Repo
+Untuk membuat repo baru bisa dilakukan melalui GitHub. Isi nama repo sesuai dengan keinginan, masukan deskripsi tentang repo yang dibuat, terdapat juga opsi apakah repo tersebut bersifat **public** atau **private**. Setelah itu bisa langsung `Create repository`.
 
 ## Clone Repo
 Proses ini adalah untuk menduplikasi repo yang ada di GitHub ke komputer lokal dengan menggunakan perintah
@@ -74,5 +75,3 @@ $ git revert HEAD
 ```
 
 Perubahan dilakukan secara manual menggunakan editor teks. Setelah selesai maka dapat di-**push** ke repo.
-
-# Mengelola Repo untuk organisasi
