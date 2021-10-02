@@ -36,3 +36,12 @@ $ git branch
   main
 ```
 Yang memiliki tanda bintang di depannya menandakan **branch** aktif. **git checkout** juga digunakan untuk berpindah **branch**.
+
+Untuk menghapus sebuah **branch** yang tidak dipakai bisa menggunakan perintah 
+
+```bash
+$ git branch -d edit-praktik-2
+Deleted branch edit-praktik-2 (was c98264f).
+```
+
+Perintah **git reset** digunakan untuk meng-undo perubahan yang sudah di-**commit**.
