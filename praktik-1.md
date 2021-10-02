@@ -17,6 +17,26 @@ Sebelum menginstal Git pastikan sudah ada editor text yang terinstal. Git dapat 
  11. Tunggu proses instalasinya selesai. Jika sudah selesai klik **Finish**.
  12. Setelah itu coba jalankan Git Bash atau command prompt dan ketikan **--git version** untuk memeriksa keberhasilan instalasi. Jika berhasil maka akan muncul versi Git yang diinstal.
 
+# Mengelola Repo di account sendiri
+
+## Clone Repo
+Proses ini adalah untuk menduplikasi repo yang ada di GitHub ke komputer lokal dengan menggunakan perintah
+
+```bash
+$ git clone https://github.com/boraverse/01-git-github
+```
+Setelah selesai maka di komputer lokal akan ada direktori **01-git-github** seperti yang ada di GitHub. Direktori pada komputer lokal disebut dengan **repo lokal**. Semua perubahan akan dilakukan di komputer lokal dan perubahan tersebut akan tersimpan di dalam **branch** utama repo lokal. Hasil perubahan di komputer lokal akan di-**push** remote repo di GitHub.
+
+## Mengubah isi
+Mengubah isi file bisa dilakukan tanpa **branch & merge** bisa juga menggunakan keduanya.
+
+### Tanpa Branch & Merge
+Proses ini dilakukan di main **branch**. Jadi file yang sudah diubah isinya akan lansung di **add** menggunakan perintah `$ git add nama_file`. Setelah di-**add** selajutnya harus di-**commit** dengan perintah `$ git commit -m "pesan_commit"`, lalu di-**push** ke remote repo di GitHub dengan perintah `$ git push origin main`.
+
+### Branch & Merge
+Sebelum mengubah file haruslah membuat **branch** terlebih dulu yang nanti akan menampung perubahan yang dibuat. Setelah mengalami perubahan maka **branch**-lah yang akan dikirim ke repo di GitHub bukan **branch** utama. *Branch** yang dikirim ke GitHub akan di gabungkan atau **merge** ke **main** (branch utama).
+
+
 ## Sinkronisasi
 Terdapat perintah **git pull**, perintah ini digunakan jika akan mengambil commit dari repo remote ke repo lokal dan menggabungkannya.
 
@@ -54,3 +74,5 @@ $ git revert HEAD
 ```
 
 Perubahan dilakukan secara manual menggunakan editor teks. Setelah selesai maka dapat di-**push** ke repo.
+
+# Mengelola Repo untuk organisasi
