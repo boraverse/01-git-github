@@ -19,3 +19,20 @@ Sebelum menginstal Git pastikan sudah ada editor text yang terinstal. Git dapat 
 
 ## Sinkronisasi
 Terdapat perintah **git pull**, perintah ini digunakan jika akan mengambil commit dari repo remote ke repo lokal dan menggabungkannya.
+
+## Membatalkan Perubahan
+Sebelum melakukan perubahan apapun pada sebuah file sebaiknya dibuat dahulu **branch**. Perubahan akan dilakukan pada **branch** baru bukan pada **branch** utama untuk menghindari jika adanya kesalahan pada perubahan yan dilakukan, maka bisa kembali ke **branch** utama dimana belum ada perubahan apapun.
+Contoh untuk membuat **branch**
+
+```bash
+$ git checkout -b edit-praktik-2
+Switched to a new branch 'edit-praktik-2'
+```
+Untuk mengetahu **branch** mana yang sedang aktif
+
+```bash
+$ git branch
+* edit-praktik-2
+  main
+```
+Yang memiliki tanda bintang di depannya menandakan **branch** aktif. **git checkout** juga digunakan untuk berpindah **branch**.
