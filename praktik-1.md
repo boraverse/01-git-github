@@ -45,3 +45,12 @@ Deleted branch edit-praktik-2 (was c98264f).
 ```
 
 Perintah **git reset** digunakan untuk meng-undo perubahan yang sudah di-**commit**.
+
+## Undo Commit Terakhir
+Terdapat perintah **git revert** yang digunakan untuk mengembalikan file yang sudah terlajur di-**push** ke repo tanpa menghapus history commit. Untuk menggunakannya bisa dengan perintah 
+
+```bash
+$ git revert HEAD
+```
+
+Perubahan dilakukan secara manual menggunakan editor teks. Setelah selesai maka dapat di-**push** ke repo.
